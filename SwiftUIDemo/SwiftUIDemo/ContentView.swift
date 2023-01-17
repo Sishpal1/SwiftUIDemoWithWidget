@@ -14,8 +14,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Login").font(.largeTitle).padding()
-            Image(systemName: "lock")
-                .imageScale(.large)
+            Image(systemName: "lock").frame(width: 200,height: 100,alignment: .center).foregroundColor(.blue)
                 .foregroundColor(.accentColor).padding()
             Text("Please enter username (more than 4 characters) and password (more than 5 characters)").underline(pattern: .dot, color: .gray).fontWeight(.thin).padding(20)
             TextField("username", text: $name).bold().padding().border(.blue)
