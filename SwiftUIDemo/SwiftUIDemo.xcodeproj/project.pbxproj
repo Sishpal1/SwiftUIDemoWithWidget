@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA0AD6F32976734100B0EAF5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0AD6F22976734100B0EAF5 /* WidgetKit.framework */; };
+		EA0AD6F52976734100B0EAF5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0AD6F42976734100B0EAF5 /* SwiftUI.framework */; };
+		EA0AD6F82976734200B0EAF5 /* LockScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0AD6F72976734200B0EAF5 /* LockScreenWidget.swift */; };
+		EA0AD6FB2976734400B0EAF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0AD6FA2976734400B0EAF5 /* Assets.xcassets */; };
+		EA0AD6FD2976734400B0EAF5 /* LockScreenWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EA0AD6F92976734200B0EAF5 /* LockScreenWidget.intentdefinition */; };
+		EA0AD6FE2976734400B0EAF5 /* LockScreenWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = EA0AD6F92976734200B0EAF5 /* LockScreenWidget.intentdefinition */; };
+		EA0AD7012976734400B0EAF5 /* LockScreenWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EA0AD6F02976734100B0EAF5 /* LockScreenWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EAEA0EAE297541160006B39D /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEA0EAD297541160006B39D /* SwiftUIDemoApp.swift */; };
 		EAEA0EB0297541160006B39D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEA0EAF297541160006B39D /* ContentView.swift */; };
 		EAEA0EB22975411C0006B39D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEA0EB12975411C0006B39D /* Assets.xcassets */; };
@@ -17,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		EA0AD6FF2976734400B0EAF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAEA0EA2297541160006B39D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA0AD6EF2976734100B0EAF5;
+			remoteInfo = LockScreenWidgetExtension;
+		};
 		EAEA0EBB2975411D0006B39D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EAEA0EA2297541160006B39D /* Project object */;
@@ -33,7 +47,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EA0AD7022976734400B0EAF5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EA0AD7012976734400B0EAF5 /* LockScreenWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		EA0AD6F02976734100B0EAF5 /* LockScreenWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LockScreenWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0AD6F22976734100B0EAF5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		EA0AD6F42976734100B0EAF5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		EA0AD6F72976734200B0EAF5 /* LockScreenWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenWidget.swift; sourceTree = "<group>"; };
+		EA0AD6F92976734200B0EAF5 /* LockScreenWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = LockScreenWidget.intentdefinition; sourceTree = "<group>"; };
+		EA0AD6FA2976734400B0EAF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA0AD6FC2976734400B0EAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAEA0EAA297541160006B39D /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEA0EAD297541160006B39D /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		EAEA0EAF297541160006B39D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +82,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EA0AD6ED2976734100B0EAF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0AD6F52976734100B0EAF5 /* SwiftUI.framework in Frameworks */,
+				EA0AD6F32976734100B0EAF5 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EAEA0EA7297541160006B39D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,12 +115,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA0AD6F12976734100B0EAF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA0AD6F22976734100B0EAF5 /* WidgetKit.framework */,
+				EA0AD6F42976734100B0EAF5 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA0AD6F62976734200B0EAF5 /* LockScreenWidget */ = {
+			isa = PBXGroup;
+			children = (
+				EA0AD6F72976734200B0EAF5 /* LockScreenWidget.swift */,
+				EA0AD6F92976734200B0EAF5 /* LockScreenWidget.intentdefinition */,
+				EA0AD6FA2976734400B0EAF5 /* Assets.xcassets */,
+				EA0AD6FC2976734400B0EAF5 /* Info.plist */,
+			);
+			path = LockScreenWidget;
+			sourceTree = "<group>";
+		};
 		EAEA0EA1297541160006B39D = {
 			isa = PBXGroup;
 			children = (
 				EAEA0EAC297541160006B39D /* SwiftUIDemo */,
 				EAEA0EBD2975411D0006B39D /* SwiftUIDemoTests */,
 				EAEA0EC72975411D0006B39D /* SwiftUIDemoUITests */,
+				EA0AD6F62976734200B0EAF5 /* LockScreenWidget */,
+				EA0AD6F12976734100B0EAF5 /* Frameworks */,
 				EAEA0EAB297541160006B39D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +153,7 @@
 				EAEA0EAA297541160006B39D /* SwiftUIDemo.app */,
 				EAEA0EBA2975411D0006B39D /* SwiftUIDemoTests.xctest */,
 				EAEA0EC42975411D0006B39D /* SwiftUIDemoUITests.xctest */,
+				EA0AD6F02976734100B0EAF5 /* LockScreenWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +197,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EA0AD6EF2976734100B0EAF5 /* LockScreenWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA0AD7052976734400B0EAF5 /* Build configuration list for PBXNativeTarget "LockScreenWidgetExtension" */;
+			buildPhases = (
+				EA0AD6EC2976734100B0EAF5 /* Sources */,
+				EA0AD6ED2976734100B0EAF5 /* Frameworks */,
+				EA0AD6EE2976734100B0EAF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LockScreenWidgetExtension;
+			productName = LockScreenWidgetExtension;
+			productReference = EA0AD6F02976734100B0EAF5 /* LockScreenWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		EAEA0EA9297541160006B39D /* SwiftUIDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAEA0ECE2975411D0006B39D /* Build configuration list for PBXNativeTarget "SwiftUIDemo" */;
@@ -137,10 +221,12 @@
 				EAEA0EA6297541160006B39D /* Sources */,
 				EAEA0EA7297541160006B39D /* Frameworks */,
 				EAEA0EA8297541160006B39D /* Resources */,
+				EA0AD7022976734400B0EAF5 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EA0AD7002976734400B0EAF5 /* PBXTargetDependency */,
 			);
 			name = SwiftUIDemo;
 			productName = SwiftUIDemo;
@@ -193,6 +279,9 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					EA0AD6EF2976734100B0EAF5 = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					EAEA0EA9297541160006B39D = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -222,11 +311,20 @@
 				EAEA0EA9297541160006B39D /* SwiftUIDemo */,
 				EAEA0EB92975411D0006B39D /* SwiftUIDemoTests */,
 				EAEA0EC32975411D0006B39D /* SwiftUIDemoUITests */,
+				EA0AD6EF2976734100B0EAF5 /* LockScreenWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EA0AD6EE2976734100B0EAF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0AD6FB2976734400B0EAF5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EAEA0EA8297541160006B39D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,11 +351,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EA0AD6EC2976734100B0EAF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0AD6F82976734200B0EAF5 /* LockScreenWidget.swift in Sources */,
+				EA0AD6FD2976734400B0EAF5 /* LockScreenWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EAEA0EA6297541160006B39D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EAEA0EB0297541160006B39D /* ContentView.swift in Sources */,
+				EA0AD6FE2976734400B0EAF5 /* LockScreenWidget.intentdefinition in Sources */,
 				EAEA0EAE297541160006B39D /* SwiftUIDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +390,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		EA0AD7002976734400B0EAF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA0AD6EF2976734100B0EAF5 /* LockScreenWidgetExtension */;
+			targetProxy = EA0AD6FF2976734400B0EAF5 /* PBXContainerItemProxy */;
+		};
 		EAEA0EBC2975411D0006B39D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EAEA0EA9297541160006B39D /* SwiftUIDemo */;
@@ -295,6 +408,58 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		EA0AD7032976734400B0EAF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LockScreenWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LockScreenWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Evon.SwiftUIDemo.LockScreenWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA0AD7042976734400B0EAF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LockScreenWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LockScreenWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Evon.SwiftUIDemo.LockScreenWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		EAEA0ECC2975411D0006B39D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -412,6 +577,7 @@
 		EAEA0ECF2975411D0006B39D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -440,6 +606,7 @@
 		EAEA0ED02975411D0006B39D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +707,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EA0AD7052976734400B0EAF5 /* Build configuration list for PBXNativeTarget "LockScreenWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0AD7032976734400B0EAF5 /* Debug */,
+				EA0AD7042976734400B0EAF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EAEA0EA5297541160006B39D /* Build configuration list for PBXProject "SwiftUIDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

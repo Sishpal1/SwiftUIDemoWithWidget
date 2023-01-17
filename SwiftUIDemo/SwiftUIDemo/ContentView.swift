@@ -8,13 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var name : String = String()
+    @State private var password : String = String()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Text("Login").font(.largeTitle).padding()
+            Image(systemName: "lock")
                 .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
+                .foregroundColor(.accentColor).padding()
+            Text("Please enter username (more than 4 characters) and password (more than 5 characters)").underline(pattern: .dot, color: .gray).fontWeight(.thin).padding(20)
+            TextField("username", text: $name).bold().padding().border(.blue)
+            SecureField("password", text: $password).padding().border(.blue)
+            Button(action: {
+                print("login button clicked")
+                print(name,password)
+                
+            }, label: {
+                Text("Login").bold()
+            }).border(.background).padding().disabled(name.count < 4 || password.count < 5)
+         }
         .padding()
     }
 }
